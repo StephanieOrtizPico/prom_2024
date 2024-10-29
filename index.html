@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>200 Años - Colegio Guanentá</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #0044cc;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.header-buttons {
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+}
+
+.header-buttons button {
+    margin-left: 10px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.header-buttons button:hover {
+    background-color: #0056b3;
+}
+
+main {
+    padding: 2rem;
+}
+
+#cursos h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+}
+
+.curso {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: white;
+}
+
+.curso h3 {
+    font-size: 1.5rem;
+    color: #0044cc;
+    text-align: center;
+}
+
+.director, .estudiantes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.director img, .estudiantes img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 5px;
+    border: 2px solid #0044cc;
+    transition: transform 0.3s;
+}
+
+.director img:hover, .estudiantes img:hover {
+    transform: scale(1.1);
+}
+
+.director p {
+    margin-top: 0.5rem;
+    font-weight: bold;
+    color: #555;
+}
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #0044cc;
+    color: white;
+    margin-top: 2rem;
+}
+
+.estudiantes {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.estudiantes img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid #0044cc;
+    transition: transform 0.3s;
+}
+
+.estudiantes img:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+
+.foto-grupal {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.foto-grupal img {
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+</style>
+<body>
+    <header>
+        <h1>Colegio Guanentá - 200 Años de Excelencia</h1>
+        <div class="header-buttons">
+            <button onclick="location.href='login.html'">Iniciar Sesión</button>
+            <button onclick="location.href='register.html'">Registrarse</button>
+        </div>
+    </header>
+    
+    <main>
+        <section id="cursos">
+            <h2>Cursos de Grado 11</h2>
+            
+            <!-- 11-1 -->
+            <div class="curso">
+                <h3>11-1</h3>
+                <div class="director">
+                    <img src="img/11-1/JuanNieto.jpeg" alt="Director de grupo 11-1">
+                    <p>Director: Juan Manuel Nieto</p>
+                </div>
+                <div class="estudiantes">
+                    <img src="img/11-1/AndresADiaz.jpeg" alt="Estudiante 1">
+                    <img src="img/11-1/AndresGarcia.jpeg" alt="Estudiante 2">
+                    <img src="img/11-1/AndresSDiaz.jpeg" alt="Estudiante 3">
+                    <img src="img/11-1/AngieSuarez.jpeg" alt="Estudiante 4">
+                    <img src="img/11-1/CesarSalamanca.jpeg" alt="Estudiante 5">
+                    <img src="img/11-1/CristianCastro.jpeg" alt="Estudiante 6">
+                    <img src="img/11-1/DanielCardenas.jpeg" alt="Estudiante 7">
+                    <img src="img/11-1/DannaMurillo.jpeg" alt="Estudiante 8">
+                    <img src="img/11-1/DannaCarranza.jpeg" alt="Estudiante 9">
+                    <img src="img/11-1/DannaUribe.jpeg" alt="Estudiante 10">
+                    <img src="img/11-1/DannaSilva.jpeg" alt="Estudiante 11">
+                    <img src="img/11-1/EdwarColmenares.jpeg" alt="Estudiante 12">
+                    <img src="img/11-1/EdwinEnrique.jpeg" alt="Estudiante 13">
+                    <img src="img/11-1/GeorginaCarvajal.jpeg" alt="Estudiante 14">
+                    <img src="img/11-1/JesusMontilla.jpeg" alt="Estudiante 15">
+                    <img src="img/11-1/JoseEstevez.jpeg" alt="Estudiante 16">
+                    <img src="img/11-1/JossefethPalomino.jpeg" alt="Estudiante 17">
+                    <img src="img/11-1/JuanGarcia.jpeg" alt="Estudiante 18">
+                    <img src="img/11-1/JuanGranados.jpeg" alt="Estudiante 19">
+                    <img src="img/11-1/JuanArenas.jpeg" alt="Estudiante 20">
+                    <img src="img/11-1/JuanAraque.jpeg" alt="Estudiante 21">
+                    <img src="img/11-1/JulianSanchez.jpeg" alt="Estudiante 22">
+                    <img src="img/11-1/KarenSanchez.jpeg" alt="Estudiante 23">
+                    <img src="img/11-1/KarlaRodriguez.jpeg" alt="Estudiante 24">
+                    <img src="img/11-1/KellyPeñafiel.jpeg" alt="Estudiante 25">
+                    <img src="img/11-1/MariaAguilar.jpeg" alt="Estudiante 26">
+                    <img src="img/11-1/MariaMartinez.jpeg" alt="Estudiante 27">
+                    <img src="img/11-1/MariaNiño.jpeg" alt="Estudiante 28">
+                    <img src="img/11-1/NicolleOrtiz.jpeg" alt="Estudiante 29">
+                    <img src="img/11-1/OrlandoVillareal.jpeg" alt="Estudiante 30">
+                    <img src="img/11-1/OscarAmaya.jpeg" alt="Estudiante 31">
+                    <img src="img/11-1/PaulaCastellanos.jpeg" alt="Estudiante 32">
+                    <img src="img/11-1/SaraiQuintero.jpeg" alt="Estudiante 33">
+                    <img src="img/11-1/SmetteringArguello.jpeg" alt="Estudiante 34">
+                    <img src="img/11-1/StephanieGomez.jpeg" alt="Estudiante 35">
+                    <img src="img/11-1/ValerieChaves.jpeg" alt="Estudiante 36">
+                    <img src="img/11-1/WalterMoreno.jpeg" alt="Estudiante 37">
+                    <img src="img/11-1/WilmerBaez.jpeg" alt="Estudiante 38">
+                    <img src="img/11-1/YefreyArdila.jpeg" alt="Estudiante 39">
+                </div>
+
+                <div class="foto-grupal">
+                    <img src="img/11-1/Grupal1.jpeg" alt="Foto grupal del curso 11-1">
+                </div>
+                
+            </div>
+
+            <!-- 11-2 -->
+            <div class="curso">
+                <h3>11-2</h3>
+                <div class="director">
+                    <img src="img/11-2/" alt="Director de grupo 11-2">
+                    <p>Director: Neptalí Camargo Rodriguez</p>
+                </div>
+                <div class="estudiantes">
+                    <img src="img/11-2/" alt="Estudiante 1">
+                    <img src="img/11-2/" alt="Estudiante 2">
+                    <img src="img/11-2/" alt="Estudiante 3">
+                    <img src="img/11-2/" alt="Estudiante 4">
+                    <img src="img/11-2/" alt="Estudiante 5">
+                    <img src="img/11-2/" alt="Estudiante 6">
+                    <img src="img/11-2/" alt="Estudiante 7">
+                    <img src="img/11-2/" alt="Estudiante 8">
+                    <img src="img/11-2/" alt="Estudiante 9">
+                    <img src="img/11-2/" alt="Estudiante 10">
+                    <img src="img/11-2/" alt="Estudiante 11">
+                    <img src="img/11-2/" alt="Estudiante 12">
+                    <img src="img/11-2/" alt="Estudiante 13">
+                    <img src="img/11-2/" alt="Estudiante 14">
+                    <img src="img/11-2/" alt="Estudiante 15">
+                    <img src="img/11-2/" alt="Estudiante 16">
+                    <img src="img/11-2/" alt="Estudiante 17">
+                    <img src="img/11-2/" alt="Estudiante 18">
+                    <img src="img/11-2/" alt="Estudiante 19">
+                    <img src="img/11-2/" alt="Estudiante 20">
+                    <img src="img/11-2/" alt="Estudiante 21">
+                    <img src="img/11-2/" alt="Estudiante 22">
+                    <img src="img/11-2/" alt="Estudiante 23">
+                    <img src="img/11-2/" alt="Estudiante 24">
+                    <img src="img/11-2/" alt="Estudiante 25">
+                    <img src="img/11-2/" alt="Estudiante 26">
+                    <img src="img/11-2/" alt="Estudiante 27">
+                    <img src="img/11-2/" alt="Estudiante 28">
+                    <img src="img/11-2/" alt="Estudiante 29">
+                    <img src="img/11-2/" alt="Estudiante 30">
+                    <img src="img/11-2/" alt="Estudiante 31">
+                    <img src="img/11-2/" alt="Estudiante 32">
+                    <img src="img/11-2/" alt="Estudiante 33">
+                    <img src="img/11-2/" alt="Estudiante 34">
+                    <img src="img/11-2/" alt="Estudiante 35">
+                    <img src="img/11-2/" alt="Estudiante 36">
+                    <img src="img/11-2/" alt="Estudiante 37">
+                    <img src="img/11-2/" alt="Estudiante 38">
+                    <img src="img/11-2/" alt="Estudiante 39">
+                </div>
+
+                <div class="foto-grupal">
+                    <img src="img/11-2/" alt="Foto grupal del curso 11-2">
+                </div>
+                
+            </div>
+
+            <!-- 11-3 -->
+            <div class="curso">
+                <h3>11-3</h3>
+                <div class="director">
+                    <img src="img/11-3/" alt="Director de grupo 11-3">
+                    <p>Director: Jhon Freddy Botero</p>
+                </div>
+                <div class="estudiantes">
+                    <img src="img/11-3/" alt="Estudiante 1">
+                    <img src="img/11-3/" alt="Estudiante 2">
+                    <img src="img/11-3/" alt="Estudiante 3">
+                    <img src="img/11-3/" alt="Estudiante 4">
+                    <img src="img/11-3/" alt="Estudiante 5">
+                    <img src="img/11-3/" alt="Estudiante 6">
+                    <img src="img/11-3/" alt="Estudiante 7">
+                    <img src="img/11-3/" alt="Estudiante 8">
+                    <img src="img/11-3/" alt="Estudiante 9">
+                    <img src="img/11-3/" alt="Estudiante 10">
+                    <img src="img/11-3/" alt="Estudiante 11">
+                    <img src="img/11-3/" alt="Estudiante 12">
+                    <img src="img/11-3/" alt="Estudiante 13">
+                    <img src="img/11-3/" alt="Estudiante 14">
+                    <img src="img/11-3/" alt="Estudiante 15">
+                    <img src="img/11-3/" alt="Estudiante 16">
+                    <img src="img/11-3/" alt="Estudiante 17">
+                    <img src="img/11-3/" alt="Estudiante 18">
+                    <img src="img/11-3/" alt="Estudiante 19">
+                    <img src="img/11-3/" alt="Estudiante 20">
+                    <img src="img/11-3/" alt="Estudiante 21">
+                    <img src="img/11-3/" alt="Estudiante 22">
+                    <img src="img/11-3/" alt="Estudiante 23">
+                    <img src="img/11-3/" alt="Estudiante 24">
+                    <img src="img/11-3/" alt="Estudiante 25">
+                    <img src="img/11-3/" alt="Estudiante 26">
+                    <img src="img/11-3/" alt="Estudiante 27">
+                    <img src="img/11-3/" alt="Estudiante 28">
+                    <img src="img/11-3/" alt="Estudiante 29">
+                    <img src="img/11-3/" alt="Estudiante 30">
+                    <img src="img/11-3/" alt="Estudiante 31">
+                    <img src="img/11-3/" alt="Estudiante 32">
+                    <img src="img/11-3/" alt="Estudiante 33">
+                    <img src="img/11-3/" alt="Estudiante 34">
+                    <img src="img/11-3/" alt="Estudiante 35">
+                    <img src="img/11-3/" alt="Estudiante 36">
+                    <img src="img/11-3/" alt="Estudiante 37">
+                    <img src="img/11-3/" alt="Estudiante 38">
+                    <img src="img/11-3/" alt="Estudiante 39">
+                </div>
+
+                <div class="foto-grupal">
+                    <img src="img/11-3/" alt="Foto grupal del curso 11-3">
+                </div>
+                
+            </div>
+
+            <!-- 11-4 -->
+            <div class="curso">
+                <h3>11-4</h3>
+                <div class="director">
+                    <img src="img/11-4/" alt="Director de grupo 11-4">
+                    <p>Director: Fabiola Perez Ferreira</p>
+                </div>
+                <div class="estudiantes">
+                    <img src="img/11-4/" alt="Estudiante 1">
+                    <img src="img/11-4/" alt="Estudiante 2">
+                    <img src="img/11-4/" alt="Estudiante 3">
+                    <img src="img/11-4/" alt="Estudiante 4">
+                    <img src="img/11-4/" alt="Estudiante 5">
+                    <img src="img/11-4/" alt="Estudiante 6">
+                    <img src="img/11-4/" alt="Estudiante 7">
+                    <img src="img/11-4/" alt="Estudiante 8">
+                    <img src="img/11-4/" alt="Estudiante 9">
+                    <img src="img/11-4/" alt="Estudiante 10">
+                    <img src="img/11-4/" alt="Estudiante 11">
+                    <img src="img/11-4/" alt="Estudiante 12">
+                    <img src="img/11-4/" alt="Estudiante 13">
+                    <img src="img/11-4/" alt="Estudiante 14">
+                    <img src="img/11-4/" alt="Estudiante 15">
+                    <img src="img/11-4/" alt="Estudiante 16">
+                    <img src="img/11-4/" alt="Estudiante 17">
+                    <img src="img/11-4/" alt="Estudiante 18">
+                    <img src="img/11-4/" alt="Estudiante 19">
+                    <img src="img/11-4/" alt="Estudiante 20">
+                    <img src="img/11-4/" alt="Estudiante 21">
+                    <img src="img/11-4/" alt="Estudiante 22">
+                    <img src="img/11-4/" alt="Estudiante 23">
+                    <img src="img/11-4/" alt="Estudiante 24">
+                    <img src="img/11-4/" alt="Estudiante 25">
+                    <img src="img/11-4/" alt="Estudiante 26">
+                    <img src="img/11-4/" alt="Estudiante 27">
+                    <img src="img/11-4/" alt="Estudiante 28">
+                    <img src="img/11-4/" alt="Estudiante 29">
+                    <img src="img/11-4/" alt="Estudiante 30">
+                    <img src="img/11-4/" alt="Estudiante 31">
+                    <img src="img/11-4/" alt="Estudiante 32">
+                    <img src="img/11-4/" alt="Estudiante 33">
+                    <img src="img/11-4/" alt="Estudiante 34">
+                    <img src="img/11-4/" alt="Estudiante 35">
+                    <img src="img/11-4/" alt="Estudiante 36">
+                    <img src="img/11-4/" alt="Estudiante 37">
+                    <img src="img/11-4/" alt="Estudiante 38">
+                    <img src="img/11-4/" alt="Estudiante 39">
+                </div>
+
+                <div class="foto-grupal">
+                    <img src="img/11-4/" alt="Foto grupal del curso 11-4">
+                </div>
+                
+            </div>
+
+            <!-- 11-5 -->
+            <div class="curso">
+                <h3>11-5</h3>
+                <div class="director">
+                    <img src="img/11-5/" alt="Director de grupo 11-5">
+                    <p>Director: Erick Fenando Sanchez</p>
+                </div>
+                <div class="estudiantes">
+                    <img src="img/11-5/" alt="Estudiante 1">
+                    <img src="img/11-5/" alt="Estudiante 2">
+                    <img src="img/11-5/" alt="Estudiante 3">
+                    <img src="img/11-5/" alt="Estudiante 4">
+                    <img src="img/11-5/" alt="Estudiante 5">
+                    <img src="img/11-5/" alt="Estudiante 6">
+                    <img src="img/11-5/" alt="Estudiante 7">
+                    <img src="img/11-5/" alt="Estudiante 8">
+                    <img src="img/11-5/" alt="Estudiante 9">
+                    <img src="img/11-5/" alt="Estudiante 10">
+                    <img src="img/11-5/" alt="Estudiante 11">
+                    <img src="img/11-5/" alt="Estudiante 12">
+                    <img src="img/11-5/" alt="Estudiante 13">
+                    <img src="img/11-5/" alt="Estudiante 14">
+                    <img src="img/11-5/" alt="Estudiante 15">
+                    <img src="img/11-5/" alt="Estudiante 16">
+                    <img src="img/11-5/" alt="Estudiante 17">
+                    <img src="img/11-5/" alt="Estudiante 18">
+                    <img src="img/11-5/" alt="Estudiante 19">
+                    <img src="img/11-5/" alt="Estudiante 20">
+                    <img src="img/11-5/" alt="Estudiante 21">
+                    <img src="img/11-5/" alt="Estudiante 22">
+                    <img src="img/11-5/" alt="Estudiante 23">
+                    <img src="img/11-5/" alt="Estudiante 24">
+                    <img src="img/11-5/" alt="Estudiante 25">
+                    <img src="img/11-5/" alt="Estudiante 26">
+                    <img src="img/11-5/" alt="Estudiante 27">
+                    <img src="img/11-5/" alt="Estudiante 28">
+                    <img src="img/11-5/" alt="Estudiante 29">
+                    <img src="img/11-5/" alt="Estudiante 30">
+                    <img src="img/11-5/" alt="Estudiante 31">
+                    <img src="img/11-5/" alt="Estudiante 32">
+                    <img src="img/11-5/" alt="Estudiante 33">
+                    <img src="img/11-5/" alt="Estudiante 34">
+                    <img src="img/11-5/" alt="Estudiante 35">
+                    <img src="img/11-5/" alt="Estudiante 36">
+                    <img src="img/11-5/" alt="Estudiante 37">
+                    <img src="img/11-5/" alt="Estudiante 38">
+                    <img src="img/11-5/" alt="Estudiante 39">
+                </div>
+
+                <div class="foto-grupal">
+                    <img src="img/11-5/" alt="Foto grupal del curso 11-5">
+                </div>
+                
+            </div>
+            
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Colegio Guanentá - Celebrando 200 años de historia como Colegio Santanderino.</p>
+    </footer>
+</body>
+</html>
